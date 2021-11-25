@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical instruments</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/png">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    
+    <header>
+        <h1 style="padding: 0%; margin: 0%; font-size: 40px; text-align: center; position:  relative; top: 10%;">Лабораторна робота №3</h1>
+        
+    </header>
+
+    <div id = "content" style="text-align: center; min-height: 100%;">
+
+        <h2>Музыкальные инструменты</h2>
+        
+        <div style="display: block; width: 750px; height: 550px; overflow: hidden; margin-left: auto; margin-right: auto;">
+            <img id="images" alt="musical_instruments" src="images/1.jpg" onclick="changeImage()">
+        </div>
+        <div id = "conteiner">
+            <div style="display: block; margin-left: auto; ">
+                <p>Длина:</p>
+                <p style="padding: 4%">Высота:</p>
+                <p>Толщина рамки:</p>
+            </div>
+            <div style="display: block;  margin-right: auto;">
+                <p><input id="width" type="range" min="500" max="700" step="8" value="600" oninput="changeWidth()"></p>
+                <p><input id="height" type="range" min="300" max="500" step="8" value="400" oninput="changeHeight()"></p> 
+                <p><input id="border" type="range" min="0" max="8" step="1" value="4" oninput="changeBorder()"></p>
+            </div>
+        </div>
+        <input id="altimg" type="text" placeholder = "alt для зображення" name="name">
+        <button id="apply" onclick="applied()">Подтвердить</button>
+        
+    </div>
+
+    <footer style="background-color:#7a7a7a; text-align: center; height: 100px;">
+        <h2>Я очень сожалел бы, если бы моя музыка только развлекала моих слушателей: я стремился их сделать лучше.
+            Георг Фридрих Гендель (23 февраля 1685 — 14 апреля 1759), немецкий и английский композитор.</h2>
+       
+    </footer>
+
+</body>
+</html>
